@@ -52,8 +52,3 @@ std::string Product::GetShopName()
 {
 	return shop_name;
 }
-
-int Product::GetCost()
-{
-	return cost;
-}
