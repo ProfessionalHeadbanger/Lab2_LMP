@@ -20,6 +20,5 @@ public:
 
 	std::string GetName();
 	std::string GetShopName();
-	int GetCost();
 };
 
