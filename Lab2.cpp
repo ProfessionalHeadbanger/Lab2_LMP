@@ -4,9 +4,13 @@
 void task(DLIST& list)
 {
 	ptrNODE p = list.get_begin();
-	while (p && p->next)
+	while (p)
 	{
-		if (p->info.GetName() != p->next->info.GetName() || !p->next->next)
+		if (p->next && p->info.GetName() != p->next->info.GetName())
+		{
+			std::cout << p->info.GetName() << " - " << p->info.GetShopName() << std::endl;
+		}
+		else if (!p->next)
 		{
 			std::cout << p->info.GetName() << " - " << p->info.GetShopName() << std::endl;
 		}
